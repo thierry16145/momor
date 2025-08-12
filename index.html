@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensagem para Minha Esposa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5c6cb;
+      background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
+      background-repeat: repeat;
+      text-align: center;
+      color: #e84d86;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.8;
+    }
+
+    .button {
+      padding: 15px 30px;
+      margin-top: 30px;
+      background-color: #e84d86;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #d43d6b;
+    }
+
+    .image-section img {
+      width: 300px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Primeira parte: Texto romântico -->
+  <div id="mensagem" class="container">
+    <h1>Minha Esposa, Eu Te Amo Eternamente</h1>
+    <p>
+      Minha mulher, eu te amo eternamente.<br>
+      Minha esposa, você é tudo o que eu tenho e dependo de você pra viver.<br>
+      Minha amada, você é a mãe dos meus filhos, amor e o meu alicerce.<br>
+      Jajá vamos estar com nossos filhos e nossa casa, conquistando tudo juntos.<br>
+      Minha esposa, ensinando nossos filhos o que é certo.<br>
+      Amor, sendo inspiração pra eles.<br>
+      Vamos conquistar tudo, minha esposa.<br>
+      Eu te amo eternamente, minha mulher, mãe dos meus filhos.
+    </p>
+    <button class="button" onclick="mostrarImagem()">Clique aqui, minha esposa</button>
+  </div>
+
+  <!-- Segunda parte: Imagem e botão de voltar -->
+  <div id="imagem" class="container hidden">
+    <h1>Minha Amada</h1>
+    <div class="image-section">
+      <img src="https://www.pngkit.com/png/full/102-1026879_love-hearts-transparent-background-hearts-pink-background.png" alt="Imagem de coração">
+    </div>
+    <button class="button" onclick="voltarMensagem()">Voltar ao início</button>
+  </div>
+
+  <script>
+    function mostrarImagem() {
+      document.getElementById('mensagem').classList.add('hidden');
+      document.getElementById('imagem').classList.remove('hidden');
+    }
+
+    function voltarMensagem() {
+      document.getElementById('imagem').classList.add('hidden');
+      document.getElementById('mensagem').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
