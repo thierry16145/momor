@@ -1,89 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Mensagem para Minha Esposa</title>
+  <title>Homenagem para Minha Esposa</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5c6cb;
-      background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
-      background-repeat: repeat;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
       text-align: center;
-      color: #e84d86;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+      padding: 50px 20px;
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 3em;
       margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 2px 2px #d45d79;
     }
 
-    p {
-      font-size: 20px;
-      line-height: 1.8;
+    .emoji {
+      font-size: 2em;
+      margin: 10px;
+    }
+
+    .text-block {
+      margin: 30px auto;
+      font-size: 1.5em;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 0 10px #d45d79;
+    }
+
+    .heart {
+      font-size: 2.5em;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
     }
 
     .button {
       padding: 15px 30px;
       margin-top: 30px;
-      background-color: #e84d86;
+      background-color: #d45d79;
       color: white;
-      font-size: 18px;
+      font-size: 1.2em;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
 
     .button:hover {
-      background-color: #d43d6b;
+      background-color: #c13f68;
     }
 
     .image-section img {
       width: 300px;
       border-radius: 12px;
       margin-top: 30px;
+      box-shadow: 0 0 15px #fff;
     }
 
     .hidden {
       display: none;
     }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Primeira parte: Texto romântico -->
-  <div id="mensagem" class="container">
-    <h1>Minha Esposa, Eu Te Amo Eternamente</h1>
-    <p>
-      Minha mulher, eu te amo eternamente.<br>
-      Minha esposa, você é tudo o que eu tenho e dependo de você pra viver.<br>
-      Minha amada, você é a mãe dos meus filhos, amor e o meu alicerce.<br>
-      Jajá vamos estar com nossos filhos e nossa casa, conquistando tudo juntos.<br>
-      Minha esposa, ensinando nossos filhos o que é certo.<br>
-      Amor, sendo inspiração pra eles.<br>
-      Vamos conquistar tudo, minha esposa.<br>
-      Eu te amo eternamente, minha mulher, mãe dos meus filhos.
-    </p>
+  <!-- Mensagem principal -->
+  <div id="mensagem">
+    <h1>💍 Minha Esposa, Meu Amor 💖</h1>
+
+    <div class="emoji">❤️💍👰🤵💑💒🌹</div>
+
+    <div class="text-block">
+      <p>Minha mulher, eu te amo eternamente.</p>
+      <p>Minha esposa, você é tudo que eu tenho e dependo de você pra viver.</p>
+      <p>Minha amada, você é a mãe dos nossos filhos, amor e o meu alicerce.</p>
+      <p>Logo estaremos com nossos filhos e nossa casa, conquistando tudo juntos.</p>
+      <p>Minha esposa, ensinando nossos filhos o que é certo, sendo inspiração pra eles.</p>
+      <p>Vamos conquistar tudo, minha esposa.</p>
+      <p>Eu te amo eternamente, minha mulher, mãe dos meus filhos.</p>
+    </div>
+
+    <div class="emoji">💖💘💗💓💞💝</div>
+
     <button class="button" onclick="mostrarImagem()">Clique aqui, minha esposa</button>
+
+    <div class="heart">💖💖💖</div>
   </div>
 
-  <!-- Segunda parte: Imagem e botão de voltar -->
-  <div id="imagem" class="container hidden">
-    <h1>Minha Amada</h1>
+  <!-- Imagem + botão de voltar -->
+  <div id="imagem" class="hidden">
+    <h1>👨‍👩‍👧‍👦 Nossa Família, Nosso Amor 💕</h1>
+
+    <div class="emoji">🏡👶💑❤️</div>
+
     <div class="image-section">
-      <img src="https://www.pngkit.com/png/full/102-1026879_love-hearts-transparent-background-hearts-pink-background.png" alt="Imagem de coração">
+      <img src="https://www.pngkit.com/png/full/102-1026879_love-hearts-transparent-background-hearts-pink-background.png" alt="Corações do amor">
     </div>
-    <button class="button" onclick="voltarMensagem()">Voltar ao início</button>
+
+    <button class="button" onclick="voltarMensagem()">Voltar ao Início</button>
+
+    <div class="heart">💖💖💖</div>
   </div>
+
+  <footer>
+    Feito com todo amor do mundo por quem mais te ama. 💕
+  </footer>
 
   <script>
     function mostrarImagem() {
